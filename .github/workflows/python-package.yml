@@ -27,4 +27,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run CLI
       run: |
-        python cli.py --help
+        python examples/framework.py
+    - name: Run CLI
+      run: |
+        python examples/simple.py
